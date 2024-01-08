@@ -1,0 +1,26 @@
+.apartement {
+    background-image: linear-gradient(to top, #863535, #FF6060);
+    border-radius: 1rem;
+    flex-basis: 30%;
+    display: flex;
+    align-items: self-end;
+    min-width: 200px;
+}
+
+@media screen and (width <= 768px){
+ .apartement   {
+    flex-basis: 100%;
+    }
+    
+}
+.apmt-titre {
+    width: 22%;
+    color: white;
+    font-family: Montserrat;
+    font-size: 18px;
+    padding: 1rem;
+   
+   
+
+  
+}

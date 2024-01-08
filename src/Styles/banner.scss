@@ -1,14 +1,22 @@
 .banner {
   display: flex;
-  align-items: center;
-  width: 1240px;
-  height: 223px;
-  top: 163px;
-  left: 100px;
-  padding: 0 3rem;
+  height: 233px;
+  border-radius: 1rem;
+  background-size: cover;
   background-repeat: no-repeat;
+  max-width: 100%;
+  
 }
+
 h1 {
   color: white;
-  padding: 0 5rem;
+  margin: auto;
+  font-family: Montserrat;
+  font-size: 68px;
+  font-weight: 500;
+line-height: 68.45px;
+letter-spacing: 0em;
+text-align: left;
+
+  
 }
