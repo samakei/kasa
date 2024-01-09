@@ -1,6 +1,6 @@
 import React from 'react'
 import "../Styles/immeuble.scss"
-import Apartement from './Apartement';
+import Apartement from './Appartement';
 
 
 

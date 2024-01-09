@@ -1,5 +1,7 @@
 import React from "react";
 import "../Styles/home.scss";
+import { Link } from "react-router-dom";
+
 
 function Home() {
   return (
@@ -7,8 +9,8 @@ function Home() {
       <div className="home-logo">
         <img src="logo.png" alt="logo" />
       </div>
-      <div>Accueil</div>
-      <div>A propos</div>
+      <Link className="accueil" to={"/"}>Accueil</Link>
+      <Link className="apropos" to={"/about"}> <div>A propos</div> </Link>
     </nav>
   );
 }

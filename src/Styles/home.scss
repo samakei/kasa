@@ -3,9 +3,16 @@
    align-items: center;
    gap: 5rem;
    padding: 2rem;
-   color: #FF6060;
    font-weight: 700;
-  
+   
+   
+}
+.home a{
+   text-decoration: none;
+   color: #FF6060; 
+}
+.home a:hover {
+   text-decoration: underline;
    
 }
 .home-logo {

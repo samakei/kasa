@@ -5,6 +5,7 @@ import Banner from "./composants/Banner.jsx";
 import Immeuble from "./composants/Immeuble.jsx";
 import Containers from "./composants/Containers.jsx";
 import Footer from "./composants/Footer.jsx"
+import { Link } from "react-router-dom";
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
       <Immeuble />
       </Containers>
       <Footer />
-      
+     <Link /> 
     </div>
   );
 }
