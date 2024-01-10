@@ -5,12 +5,12 @@
   background-size: cover;
   background-repeat: no-repeat;
   max-width: 100%;
+  filter: brightness(60%);
+ background-color: #FFFFFF;
   
 }
 
-
-.banner h1 {
-  color: white;
+.text_bannaer {
   margin: auto;
   font-family: Montserrat;
   font-size: 68px;
@@ -18,13 +18,13 @@
   line-height: 68.45px;
   letter-spacing: 0em;
   text-align: left;
-
-  
+  color: #FFFFFF;
+   
 }
 
 @media screen and (width <= 768px) {
-  h1 {
-  font-size: 32px;
+  .text_bannaer {
+  font-size: 45px;
    }
  
  }

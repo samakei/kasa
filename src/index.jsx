@@ -1,37 +1,56 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from "react-dom/client";
 import './Styles/index.scss';
-import App from './App';
+import App from "./App";
 import reportWebVitals from './reportWebVitals';
-import { createBrowserRouter, RouterProvider,} from "react-router-dom";
+import {
+  createBrowserRouter, RouterProvider, Outlet} from "react-router-dom";
+import Footer from './composants/Footer';
+import Home from './composants/Home';
+
+const HeaderFooterLayout = () => {
+  return<>
+  <Home />
+  <Outlet />
+  <Footer />
+    </>
+}
 
 const router = createBrowserRouter ([
   {
-    path: "/", element: <App />,
-    errorElement: <h1>404 not found</h1>
+    
+    element: <HeaderFooterLayout />,
+    children: [
+      {
+      path: "/",
+      element:  <App />,
+      },
+      {
+    path: "/apartment", element: 
+   
+    <h1 className='housing'>Nos logements</h1>,
   },
-
   {
-    path: "/apartment", element: <h1>Nos appartement</h1>
+    path: "/about", element: 
+    
+       <h1>A propos</h1>   
   },
-
   {
-    path: "/about", element: <h1>A propos</h1>
+    path: "404", element: 
+     <h1 className='pagenotfound404'>404 </h1>,
+     
   },
 
-  
-
+    ],
+  },
 ])
-
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+//Si vous souhaitez commencer à mesurer les performances de votre application, passez une fonction
+//pour consigner les résultats (par exemple : reportWebVitals(console.log))
+//ou envoyer à un point de terminaison d’analyse. En savoir plus : https://bit.ly/CRA-vitals
 reportWebVitals();

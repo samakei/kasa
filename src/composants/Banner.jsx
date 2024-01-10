@@ -5,7 +5,7 @@ import imgBanner from "../Img/img-banner.jpg";
 function Banner() {
   return (
     <div className="banner" style={{ backgroundImage: `url(${imgBanner})` }}>
-      <h1>Chez vous, partout et ailleurs</h1>
+      <h1 className="text_bannaer">Chez vous, partout et ailleurs</h1>
     </div>
   );
 }

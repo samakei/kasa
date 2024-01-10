@@ -4,8 +4,6 @@
    gap: 5rem;
    padding: 2rem;
    font-weight: 700;
-   
-   
 }
 .home a{
    text-decoration: none;
@@ -17,5 +15,24 @@
 }
 .home-logo {
 margin-right: auto;
+ 
+}
+.home-logo img{
+   width: 210.32px;
+   height: 68px;
+
+}
+@media  screen and (width <= 768px) {
+ .home {
+ flex-wrap: nowrap;
+ gap: 2rem;
+ padding: 1rem;
+ font-weight: 400;
+   }
+.home-logo img{
+width: 145px;
+height: 46.88px;
+
    
+}
 }
