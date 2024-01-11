@@ -1,5 +1,6 @@
 import React from "react";
 import "../Styles/banner.scss";
+import "../Styles/App.scss"
 import imgBanner from "../Img/img-banner.jpg";
 
 function Banner() {

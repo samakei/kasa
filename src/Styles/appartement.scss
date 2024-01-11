@@ -1,4 +1,4 @@
-.appartement {
+.appartements {
     background-image: linear-gradient(to top, #863535, #FF6060);
     border-radius: 1rem;
     flex-basis: 30%;
@@ -7,12 +7,12 @@
     min-width: 200px;
     flex-wrap: nowrap;
 }
-.appartement a{
+.appartements a{
     text-decoration: none;
 }
 
 @media screen and (width <= 768px){
- .appartement   {
+ .appartements   {
     flex-basis: 100%;
     width: 335px;
     height: 255px;

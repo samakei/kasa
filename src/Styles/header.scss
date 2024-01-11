@@ -1,15 +1,15 @@
-.home {
+.header {
    display: flex; 
    align-items: center;
    gap: 5rem;
    padding: 2rem;
    font-weight: 700;
 }
-.home a{
+.header a{
    text-decoration: none;
    color: #FF6060; 
 }
-.home a:hover {
+.header a:hover {
    text-decoration: underline;
    
 }
@@ -23,11 +23,11 @@ margin-right: auto;
 
 }
 @media  screen and (width <= 768px) {
- .home {
+ .header {
  flex-wrap: nowrap;
  gap: 2rem;
  padding: 1rem;
- font-weight: 400;
+ font-weight: 500;
    }
 .home-logo img{
 width: 145px;
