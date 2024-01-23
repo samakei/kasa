@@ -1,0 +1,33 @@
+.card-navlink img{
+   border-radius: 1rem;
+    margin-top: 2rem;
+    width: 550px;
+    height:340px;
+   
+    
+}
+
+.titre_apmt {
+    display: flex;
+    justify-content: space-between;
+ color: #ff6060;
+  width: 45%;
+    font-family: Montserrat;
+    font-size: 18px;
+    
+   
+  
+    
+}
+.titre_apmt a {
+    text-decoration: none;
+}
+@media screen and (width <= 768px) {
+.card-navlink img{
+    width: 335px;
+    height: 255px;
+    top: 133px;
+
+}
+    
+}

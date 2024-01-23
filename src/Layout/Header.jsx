@@ -11,8 +11,10 @@ function Header() {
       </div>
       <NavLink className="accueil" to={"/"}>Accueil</NavLink>
       <NavLink className="apropos" to={"/about"}> <div>A propos</div> </NavLink>
+
     </nav>
   );
 }
 
 export default Header;
+

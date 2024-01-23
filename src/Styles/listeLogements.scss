@@ -1,20 +1,23 @@
-.main-appartements {
-    background: #F6F6F6;
+.main-listeLogements {
+  background-color: #F6F6F6;
+  display: flex;
+    flex-wrap: wrap;
     margin-top: 2rem;
     min-height: 30vw;
     border-radius: 2rem;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 1rem;
-    gap: 1rem;
+    gap: 2rem;
+   text-decoration: none;
     
+
 }
+
 @media screen and (width <= 768px) {
-  .main-appartements  {
+  .main-listeLogements  {
     justify-content: center;
     background-color: white;
     padding: 0;
     }
 
 }
+
+

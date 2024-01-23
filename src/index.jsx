@@ -3,9 +3,14 @@ import ReactDOM from "react-dom/client";
 import "./Styles/index.scss";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+
+import Logementpage from "./Pages/Logementpage";
+import Aboutpage from "./Pages/Aboutpage";
+import Errorpage from "./Pages/Errorpage";
+
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
-import Footer from "./Layout/Footer";
 import Header from "./Layout/Header";
+import Footer from "./Layout/Footer";
 
 const HeaderFooterLayout = () => {
   return (
@@ -20,22 +25,19 @@ const HeaderFooterLayout = () => {
 const router = createBrowserRouter([
   {
     element: <HeaderFooterLayout />,
+    errorElement: <Errorpage />,
     children: [
       {
         path: "/",
         element: <App />,
       },
       {
-        path: "/apartment",
-        element: <h1 className="housing">Nos logements</h1>,
+        path: "/logement/:logementId",
+        element: <Logementpage />,
       },
       {
         path: "/about",
-        element: <h1>A propos</h1>,
-      },
-      {
-        path: "404",
-        element: <h1 className="pagenotfound404">404 </h1>,
+        element: <Aboutpage />,
       },
     ],
   },
