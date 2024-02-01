@@ -18,7 +18,7 @@ export default  function listeLogements() {
                         id={logement.id}
                         title={logement.title}
                         cover={logement.cover}
-                        
+        
 
                        />
                 )
