@@ -2,13 +2,15 @@ $couleur: #ffffff;
 
 .banner {
   display: flex;
+  width: 1240px;
   height: 233px;
   border-radius: 1rem;
   background-size: cover;
   background-repeat: no-repeat;
-  max-width: 100%;
   position: relative;
   overflow: hidden;
+
+  
 }
 .banner::after {
   content: "";
@@ -33,23 +35,25 @@ $couleur: #ffffff;
   z-index: 1;
 
 
-
-
-
 }
 //media querry format mobile
 @media screen and (width <= 768px) {
-  .banner{
-    width: 335px;
-    height: 111px;
+  .banner {
+  max-width: 345px;
+  height: 111px;
+  
+
 
   }
+
   .text_bannaer {
    font-size: 24px;
    line-height: 34px;
    position: absolute;
    line-height: 48px;
-  left: 16px;
+  left: 16px; 
+  top: 20px;
+
   
   }
  

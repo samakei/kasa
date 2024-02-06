@@ -18,8 +18,9 @@ export default function Logementpage() {
     if (!logement) {
     return <div><Errorpage /></div>;
   }
-     
-
+  
+  
+  
   
      return (
     // Affichage des détails du logement
@@ -30,12 +31,13 @@ export default function Logementpage() {
   <Carrousel 
   pictures={logement.pictures}
    />
-
+   
+  
   <h1>{logement.title}</h1>
    {logement.description}
-   {logement.rating}
+   <p>{logement.rating}</p>
    <p>{logement.location}</p>
-   {logement.equipments}
+   <p>{logement.equipments}</p>
    {logement.tags}
   
  </div>
@@ -43,7 +45,6 @@ export default function Logementpage() {
 </nav>
 
 
- 
     
 )
 }
