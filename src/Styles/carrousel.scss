@@ -1,18 +1,38 @@
 .carrousel{
  display: flex;
- justify-content: space-between;
- position: relative;
- gap: 1rem;
- 
+ justify-content: space-around;
+ margin-top: 1rem;
  
  
 
+ 
+ 
+.image_carrousel {
+position: relative;
+
+}
 
 img {
-     width: 1240px;
-     height: 415px;
+    width: 1240px;
+    height: 415px;
      border-radius: 25px;
      box-shadow: rgb(149, 157, 165) 0px 8px 24px;
-    filter: brightness(0.9);
+    position: absolute;
 }
+
+}
+
+/* Gestion des fleches du carrousel */
+.Gestion-fleches {
+	display: flex;
+	position: absolute;
+}
+.arrow_left {
+	left: 10px;
+	
+}
+.arrow_right {
+	right: 10px;
+
+
 }

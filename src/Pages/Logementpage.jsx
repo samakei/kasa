@@ -26,26 +26,27 @@ export default function Logementpage() {
     // Affichage des détails du logement
   
    <nav className="container">
+    
+
  <div className="pgappartement">
   
   <Carrousel 
   pictures={logement.pictures}
    />
    
-  
+</div>
+
+ <div className="info-general">
   <h1>{logement.title}</h1>
    {logement.description}
    <p>{logement.rating}</p>
    <p>{logement.location}</p>
    <p>{logement.equipments}</p>
    {logement.tags}
-  
- </div>
+   </div>
  
 </nav>
 
-
-    
 )
 }
 

@@ -1,7 +1,12 @@
 
 .pgappartement {
     display: flex;
+    height: 55vh;
+    
+}
+.info-general {
+    display: flex;
+    justify-content: space-between;
     flex-direction: column;
-    flex-wrap: wrap;
-    height: 70vh;
+
 }
