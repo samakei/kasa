@@ -1,7 +1,7 @@
 import React from "react";
 import "../Styles/banner.scss";
 import "../Styles/App.scss"
-import imgBanner from "../Img/img-banner.jpg";
+import imgBanner from "../assets/img-banner.jpg";
 
 function Banner() {
   return (

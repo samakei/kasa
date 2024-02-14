@@ -1,12 +1,12 @@
 .header {
+   height: 68px;
    display: flex; 
    align-items: center;
    gap: 5rem;
    padding: 2rem;
    font-weight: 600;
    font-size: 24px;
-   width: 1240px;
-   height: 68px;
+   max-width: 1240px;
    margin: 0 auto;
  
 
@@ -30,7 +30,7 @@ margin-right: auto;
 }
 @media  screen and (width <= 768px) {
  .header {
- flex-wrap: nowrap;
+ height:  46.88px;
  gap: 2rem;
  padding: 1rem;
  font-weight: 500;
@@ -40,8 +40,16 @@ margin-right: auto;
    
 .home-logo img{
 width: 145px;
-height: 46.88px;
+height: 46.88px; 
+}
 
-   
+}
+@media screen and (max-width: 320px)  {
+.header {
+   gap: 1rem;
+}
+.home-logo img{
+width: 115px;
+height: 25.88px; 
 }
 }

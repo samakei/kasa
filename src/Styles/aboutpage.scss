@@ -1,6 +1,13 @@
-.kalen-imgbanner img{
+.about-imgbanner {
   display: flex;
   width: 1240px;
+  margin: 0 auto;
+}
+
+
+
+.about-imgbanner img{
+  width: 100%;
   height: 233px;
   border-radius: 1rem;
   background-size: cover;
@@ -9,6 +16,19 @@
   position: relative;
   overflow: hidden;
 }
-.kalen-imgbanner {
-    height: 70vh;
+.about-imgbanner {
+ height: 952px;
+    
+}
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+.about-imgbanner {
+ width: 100%;
+ justify-content: center;
+
+}
+.about-imgbanner img {
+  width: 335px;
+  height: 111px
+}
+
 }

@@ -17,12 +17,9 @@ export default  function listeLogements() {
                         key={logement.id}
                         id={logement.id}
                         title={logement.title}
-                        cover={logement.cover}
-      
+                        cover={logement.cover} 
                        />
-                )
-            })}
-     
+              )})}
     </div>
    
   );

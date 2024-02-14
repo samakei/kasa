@@ -9,7 +9,7 @@ export default function Aboutpage() {
   return (
     
     <div className='container' >
-    <div className='kalen-imgbanner'>
+    <div className='about-imgbanner'>
       <img src="kalen_banner.png" alt="banner" />
     </div>
     

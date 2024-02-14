@@ -1,11 +1,13 @@
 .footer {
-    width: 1240px;
+    width: 100%;
+    max-width: 1240px;
     background-color: black;
     color: white;
     padding: 20px;
     text-align: center;
     min-height: 200px;
     margin-top: 2rem;
+    margin: 0 auto;
  
 }
 
@@ -17,3 +19,4 @@
 .text_footer{
     padding-top: 1rem;
 }
+

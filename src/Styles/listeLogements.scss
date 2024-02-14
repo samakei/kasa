@@ -3,29 +3,27 @@
    display: flex;
    justify-content: left;
    flex-wrap: wrap;
-    margin-top: 2rem;
     min-height: 30vw;
     border-radius: 2rem;
-    width: 1240px;
-   
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
     
     
-
- 
     
 
 }
 
-@media screen and (width <= 768px) {
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
   .main-listeLogements  {
-    flex-direction: column;
+    max-width: 100%;
     background-color: white;
-    padding: 0;
-    width: 100%;
+    justify-content: center;
+   
     }
     
 
 }
-
 
 

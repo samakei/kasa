@@ -27,22 +27,23 @@ export default function Logementpage() {
   
    <nav className="container">
     
-
- <div className="pgappartement">
+<div className="pgappartement">
   
   <Carrousel 
   pictures={logement.pictures}
    />
    
-</div>
+  </div>
+ 
+
 
  <div className="info-general">
   <h1>{logement.title}</h1>
-   {logement.description}
-   <p>{logement.rating}</p>
+   <p>{logement.description}</p>
+    <p>{logement.rating}</p>
    <p>{logement.location}</p>
    <p>{logement.equipments}</p>
-   {logement.tags}
+   <samp>{logement.tags}</samp>
    </div>
  
 </nav>

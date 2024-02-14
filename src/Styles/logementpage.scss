@@ -2,11 +2,17 @@
 .pgappartement {
     display: flex;
     height: 55vh;
+    width: 100%;
+     max-width: 1240px;
+    margin: 0 auto;
     
 }
 .info-general {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+     max-width: 1240px;
+    margin: 0 auto;
+    
 
 }
