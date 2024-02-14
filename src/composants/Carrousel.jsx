@@ -30,6 +30,9 @@ const Carrousel = ({ pictures }) => {
          <div className="carrousel">
         <img className="image_carrousel" src={pictures[currentIndex]} alt="Carrousel" />
          </div>
+         <div className="slides-counter">
+          {currentIndex + 1} / {pictures.length}
+         </div>
       
       <button className="right-btn" onClick={handleRightClick}>
         <img src={rightArrow} alt="Flèche droite" />
