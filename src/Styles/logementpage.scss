@@ -1,7 +1,6 @@
 
 .pgappartement {
     display: flex;
-    height: 55vh;
     width: 100%;
      max-width: 1240px;
     margin: 0 auto;
@@ -14,5 +13,37 @@
      max-width: 1240px;
     margin: 0 auto;
     
+}
+.carte-titre {
+width: 635px;
+top: 608px;
+left: 100px;
+font-family: Montserrat;
 
+}
+
+.carte-mots_cles {
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+    
+   
+    
+}
+.carte-hôtesse {
+    display: flex;
+    justify-content: right;
+   
+
+
+
+    
+}
+.carte-notation {
+    display: flex;
+    justify-content: right;
+    
 }

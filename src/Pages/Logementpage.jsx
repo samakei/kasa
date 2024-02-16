@@ -4,7 +4,8 @@ import "../Styles/logementpage.scss";
 import { useParams } from 'react-router-dom';
 import logements from "../API/logements.json";
 import Errorpage from "./Errorpage";
-import Carrousel from "../composants/Carrousel";
+import Slideshow from "../composants/Slideshow";
+import Rating from "../composants/Rating";
 
 
 
@@ -27,25 +28,37 @@ export default function Logementpage() {
   
    <nav className="container">
     
-<div className="pgappartement">
+  <div className="pgappartement">
   
-  <Carrousel 
-  pictures={logement.pictures}
-   />
-   
+  <Slideshow pictures={logement.pictures} />
+
   </div>
  
-
-
  <div className="info-general">
-  <h1>{logement.title}</h1>
-   <p>{logement.description}</p>
-    <p>{logement.rating}</p>
+   <div className="carte-titre">
+    <h2>{logement.title}</h2>
    <p>{logement.location}</p>
-   <p>{logement.equipments}</p>
-   <samp>{logement.tags}</samp>
+ </div>
+
+  <ul className="carte-mots_cles">
+   {logement.tags.map((tag, index) => (
+    <li key={index}>{tag}</li>
+   ))}
+   </ul>
+   
+   <div className="carte-hôtesse">
+   <img src={logement.host.picture} alt="host" />
+      <p>{logement.host.name}</p>
    </div>
- 
+
+   <span className="carte-notation">
+      < Rating rate={logement.rating} rateMax={5} />
+   </span>
+
+   
+   
+   
+ </div>
 </nav>
 
 )

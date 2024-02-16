@@ -15,6 +15,7 @@
     
 img {
   position: absolute;
+  
 
 }
 
@@ -76,15 +77,16 @@ z-index: 1;
   flex-wrap: nowrap;
   }
  .image_carrousel{
-  max-width: 335px;
+  flex-wrap: nowrap;
+  max-width: 100%;
   }
   
 .left-btn {
- max-width: 48px;
+ max-width: 100%;
  
   }
 .righ-btn {
-max-width: 48px;
+max-width: 100%;
 
 
 }
