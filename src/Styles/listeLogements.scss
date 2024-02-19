@@ -9,18 +9,14 @@
     max-width: 1240px;
     margin: 0 auto;
     
-    
-    
-
 }
 
 
-@media screen and (min-width: 320px) and (max-width: 1024px) {
+@media only screen and (max-width: 600px) {
   .main-listeLogements  {
-    max-width: 100%;
+    width: 100%;
     background-color: white;
-    justify-content: center;
-   
+    
     }
     
 

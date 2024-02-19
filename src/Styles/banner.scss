@@ -39,7 +39,7 @@ $couleur: #ffffff;
 
 }
 //media querry format Mobile Tablette et Ordinateur portable//
-@media screen and (min-width: 320px) and (max-width: 1024px) {
+@media only screen and (max-width: 600px) {
   .banner {
   width: 100%;
   height: 111px;
@@ -49,12 +49,16 @@ $couleur: #ffffff;
   }
   
   .text_bannaer {
-   font-size: 24px;
-   line-height: 24px;
-  left: 17px; 
-  top: 31px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  left: 16px; 
+  top: 35px;
+  flex-wrap: nowrap;
   position: absolute;
-  width: calc(100% - 100px);
+  
+width: calc(100% - 70px);
  
  
 

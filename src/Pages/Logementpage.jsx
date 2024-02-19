@@ -6,6 +6,7 @@ import logements from "../API/logements.json";
 import Errorpage from "./Errorpage";
 import Slideshow from "../composants/Slideshow";
 import Rating from "../composants/Rating";
+import Collapse from "../composants/Collapse";
 
 
 
@@ -39,6 +40,7 @@ export default function Logementpage() {
     <h2>{logement.title}</h2>
    <p>{logement.location}</p>
  </div>
+   
 
   <ul className="carte-mots_cles">
    {logement.tags.map((tag, index) => (
@@ -51,13 +53,24 @@ export default function Logementpage() {
       <p>{logement.host.name}</p>
    </div>
 
-   <span className="carte-notation">
-      < Rating rate={logement.rating} rateMax={5} />
-   </span>
+   <div className="carte-notation">
+      < Rating rating={logement.rating} />
+   </div>
 
+    <div className="fondation-collapse "> 
+   <Collapse  ClassLogementCollapse={"logementCollapse"}
+                    title="Description"
+                    text={logement.description} />
+
+   <Collapse ClassLogementCollapse={"logementCollapse"}
+                    title="Équipements"
+                    text={<ul>
+             {logement.equipments.map((equipment, index) => (
+             <li key={index}> {equipment}</li>
+                        ))}
+                    </ul>} />
    
-   
-   
+   </div>
  </div>
 </nav>
 

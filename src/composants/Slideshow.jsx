@@ -29,7 +29,7 @@ const Slideshow = ({ pictures }) => {
       </button>
          
          <div className="carrousel">
-        <img className="image_carrousel" src={pictures[currentIndex]} alt="Carrousel" />
+        <img src={pictures[currentIndex]} alt="Carrousel" />
          </div>
          
          <div className="slides-counter">

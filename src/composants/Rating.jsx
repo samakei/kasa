@@ -1,19 +1,28 @@
-import React from 'react'
+import React, { useState } from "react";
+import "../Styles/rating.scss"
 
+const StarRating = () => {
+  const [rating, setRating] = useState(3);
 
-function Rating({ rate, rateMax }) {
-
-    const stars = [];
-    for (let i = 1; i <= rateMax; i++) {
-        const starClass = i <= rate ? 'pleine' : 'vide';
-        stars.push
-            (<i key={i} className={`fa-solid fa-star star ${starClass}`}></i>)
-    }
-    return (
-        <div className="rating">
-            {stars}
-        </div>
-    );
+  return (
+    <div className="star-rating">
+      {[...Array(5)].map((star, index) => {
+        index += 1;
+        return (
+          <span
+           type="button"
+            key={index}
+            className={index <= rating ? "on" : "off"}
+            onClick={() => setRating(index)}
+          >
+            <span className="star">★{star}</span>
+          </span>
+        );
+      })}
+    </div>
+  );
 };
 
-export default Rating;
+export default StarRating;
+
+
