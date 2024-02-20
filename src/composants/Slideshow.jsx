@@ -19,7 +19,7 @@ const Slideshow = ({ pictures }) => {
       return (oldIndex + 1) % pictures.length;
     });
   }
-   // Affiche les bouton « left et right »
+   // Affiche pictures carrousel et les bouton « left et right »
   return (
 
    <div className="Gestion-fleches"  >

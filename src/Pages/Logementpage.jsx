@@ -58,9 +58,14 @@ export default function Logementpage() {
    </div>
 
     <div className="fondation-collapse "> 
-   <Collapse  ClassLogementCollapse={"logementCollapse"}
+
+   <Collapse ClasslogementCollapse={"logementCollapse"}
                     title="Description"
-                    text={logement.description} />
+                    text={logement.description} /> 
+  
+
+
+   
 
    <Collapse ClassLogementCollapse={"logementCollapse"}
                     title="Équipements"

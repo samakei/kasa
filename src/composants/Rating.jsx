@@ -3,7 +3,7 @@ import "../Styles/rating.scss"
 
 const StarRating = () => {
   const [rating, setRating] = useState(3);
-
+  // affiche les étoilles //
   return (
     <div className="star-rating">
       {[...Array(5)].map((star, index) => {
