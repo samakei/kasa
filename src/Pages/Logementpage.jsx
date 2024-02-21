@@ -59,15 +59,12 @@ export default function Logementpage() {
 
     <div className="fondation-collapse "> 
 
-   <Collapse ClasslogementCollapse={"logementCollapse"}
+   <Collapse ClassDescription={"logementCollapse"}
                     title="Description"
                     text={logement.description} /> 
   
 
-
-   
-
-   <Collapse ClassLogementCollapse={"logementCollapse"}
+   <Collapse ClassDescription={"logementCollapse"}
                     title="Équipements"
                     text={<ul>
              {logement.equipments.map((equipment, index) => (

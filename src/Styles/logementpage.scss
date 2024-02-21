@@ -92,23 +92,18 @@ height: 52px;
     justify-content: right;
     position: absolute;
    
-    
    
-    
      
 }
 .fondation-collapse {
    display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 76px;
+
  
    
 }
-.logementCollapse {
-   overflow: hidden;
-  
-}
+
 
 
 @media only screen and (max-width: 600px) {
