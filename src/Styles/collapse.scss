@@ -4,6 +4,8 @@
  width: 582px;
  position: relative;
   border-radius: 5px;
+  
+  
  
  
   
@@ -12,6 +14,7 @@
     background-color: #f6f6f6;
     height: 279px;
     border-radius: 10px;
+    
   }
   
   &.closed .collapse-content {
@@ -19,16 +22,19 @@
   }
   
   .collapse-header {
-    cursor: pointer;
     padding-left: 0;
     border-radius: 10px;
-    background-color: #ff6060;
+    background: #ff6060;
     padding: 0.5rem;
     height: 52px;
-
+    pointer-events: none;
+    
+    
     .arrow {
+      cursor: pointer;
       float: right;
       transition: transform 0.3s ease;
+      pointer-events: visible;
       
       &.open {
         transform: rotate(180deg);
@@ -39,6 +45,7 @@
   .collapse-content {
     display: none;
     padding: 10px;
+    
   }
 }
  
@@ -54,6 +61,8 @@
   padding-left: 0;
   color: white;
   align-items: center;
+  
+  
  
 
  
