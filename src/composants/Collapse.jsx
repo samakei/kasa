@@ -25,6 +25,7 @@ const Collapse = ({ title, text,  children }) => {
         <div className="collapse-content"> 
           {children}
           <span className='collapse-text'>{text}</span>
+          
         </div>
       )}
     </div>

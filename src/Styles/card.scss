@@ -39,17 +39,17 @@ color: white;
 }
 
 
-
-@media only screen and (max-width: 600px) {  
+//media query pour format smartphone//
+@media only screen and (max-width: 768px) {  
 .card {
 width: 100%;
 }
 .card-navlink {
- width: 100%;
+ width: auto;
 
 }
 .card-navlink img{
-  width: 335px;
+  width: 100%;
   height: 100%;
   }
  

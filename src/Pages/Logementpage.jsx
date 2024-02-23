@@ -16,7 +16,7 @@ export default function Logementpage() {
    // Recherche du logement correspondant dans le fichier JSON
    const logement = logements.find(logement => logement.id === logementId); /*  trouver le bon logement dans "logements.json" à partir de logementId */;
   
-   // Vérification si le logement existe/
+   // Vérification si le logement existe? si non affiche la page erreur //
     if (!logement) {
     return <div><Errorpage /></div>;
   }
@@ -64,7 +64,7 @@ export default function Logementpage() {
                     text={logement.description} /> 
   
 
-   <Collapse ClassDescription={"logementCollapse"}
+   <Collapse ClassEquipements={"logementCollapse"}
                     title="Équipements"
                     text={<ul>
              {logement.equipments.map((equipment, index) => (

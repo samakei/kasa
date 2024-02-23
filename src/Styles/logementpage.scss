@@ -105,7 +105,7 @@ height: 52px;
 }
 
 
-
+//media query pour format smartphone//
 @media only screen and (max-width: 600px) {
  .carte-mots_cles li{
      height: 18px;
@@ -118,5 +118,11 @@ height: 52px;
     min-width: 84px;
     font-size: 10px;
     padding: 2px 6px;
+  }
+  .fondation-collapse{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
   }
 }

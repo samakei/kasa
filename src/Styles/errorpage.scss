@@ -25,3 +25,10 @@ letter-spacing: 0em;
     margin: 2em;
 }
 
+//media query pour format smartphone//
+@media screen and (max-width: 768px) {
+.eurrepage {
+    width: auto;
+}
+    
+}

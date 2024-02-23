@@ -4,6 +4,7 @@
  width: 582px;
  position: relative;
   border-radius: 5px;
+ 
   
   
  
@@ -28,6 +29,7 @@
     padding: 0.5rem;
     height: 52px;
     pointer-events: none;
+    margin-top: 0.80rem;
     
     
     .arrow {
@@ -58,24 +60,24 @@
   font-weight: 700;
  line-height: 26px;
   text-align: left;
-  padding-left: 0;
   color: white;
   align-items: center;
   
   
  
-
- 
-
- 
 }
 
 .collapse-text {
     width:  582px; 
-    color: black;
-    left: 20px;
-    border-radius: 5px;
-   border-radius: 5px;
-   margin-top: 0em;
-    
+    font-size: 25px;
+    color: #000;
+     
 }
+
+//media query pour format smartphone//
+@media  screen and (max-width: 768px){
+.collapse {
+  width: auto;
+}
+}
+
