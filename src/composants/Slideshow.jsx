@@ -28,7 +28,7 @@ const Slideshow = ({ pictures }) => {
         <img src={leftArrow} alt="Flèche gauche" />
       </button>
          
-         <div className="carrousel">
+         <div className="slides-carrousel">
         <img src={pictures[currentIndex]} alt="Carrousel" />
          </div>
          

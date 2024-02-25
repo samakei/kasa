@@ -3,13 +3,6 @@
     "development"
   ],
   "hints": {
-    "compat-api/css": [
-      "default",
-      {
-        "ignore": [
-          "object-fit"
-        ]
-      }
-    ]
+    "compat-api/css": "off"
   }
 }

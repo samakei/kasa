@@ -1,14 +1,20 @@
-.carrousel{
- min-width: 1240px;
+.slides-carrousel{
+  display: flex;
+  width: 100%;
+  width: 1240px;
+  height: auto;
+  margin: 0 auto;
  
 }
 
-.carrousel img {
-    width: 100%;
-   max-height: 415px;
-   border-radius: 25px;
+.slides-carrousel img {
+  max-width: 100%;
+  width: 100%;
+  max-height: 415px;
+  border-radius: 1rem;
+  background-size: cover;
   filter: brightness(0.9);
-  object-fit: cover;
+  overflow: hidden;
   
   
 }
@@ -17,7 +23,6 @@
 /* Gestion des fleches du carrousel */
 .Gestion-fleches {
   display: flex;
-   min-width: 1240px;
   justify-content: center;
   position: relative;
   align-items: center;
@@ -60,27 +65,39 @@ z-index: 1;
    
   
 
-//media querry format Mobile Tablette et Ordinateur portable//
-@media only screen and (max-width: 600px) {
-.carrousel {
+//media querry pour format  smartphone//
+@media  only screen and (max-width: 768px) {
+.slides-carrousel {
   width: 100%;
+  justify-content: center;
+  
+  
 
   }
-.carrousel img {
-  width: 335px;
-  height: 255px;
-  justify-content: center;
-  align-items: center;
+.slides-carrousel img{
+   width: 768px;
+   height: 255px;
   
 }
- 
-  
-.left-btn {
- max-width: 100%;
- 
-  }
-.righ-btn {
-max-width: 100%;
+.Gestion-fleches button {
+  width: auto;
 }
+.left-btn img {
+  width: 35px;
+  height: 35px;
+margin-top: 3rem;
+left: 0;
+}
+.right-btn img{
+  width: 35px;
+  height: 35px;
+  margin-top: 3rem;
+  padding: 0;
+
+
+
+}
+ 
+
 
 }

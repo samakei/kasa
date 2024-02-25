@@ -7,11 +7,13 @@ import "../Styles/card.scss"
 
 export default function Card({id, title, cover}) {
   return (
-    <div className='card'>
-     <NavLink to={`logement/${id}`} className="card-navlink">
+    <article className='carte-logement'>
+      <div className='carte'>
+     <NavLink to={`logement/${id}`}>
         <img  src={cover} alt={title} />
-        <h3 className='titre_apmt'>{title}</h3>
     </NavLink>
+    <h3 className='titre_appartement'>{title}</h3>
     </div>
+    </article>
   )
 }

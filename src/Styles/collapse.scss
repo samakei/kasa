@@ -71,13 +71,17 @@
     width:  582px; 
     font-size: 25px;
     color: #000;
+   
      
 }
 
 //media query pour format smartphone//
-@media  screen and (max-width: 768px){
+@media only  screen and (max-width: 768px){
 .collapse {
   width: auto;
 }
+.collapse-text {
+  font-size: 19px;
+  
 }
-
+}
