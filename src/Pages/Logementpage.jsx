@@ -5,8 +5,8 @@ import { useParams } from 'react-router-dom';
 import logements from "../API/logements.json";
 import Errorpage from "./Errorpage";
 import Slideshow from "../composants/Slideshow";
-import Rating from "../composants/Rating";
 import Collapse from "../composants/Collapse";
+import "../Styles/rating.scss"
 
 
 
@@ -18,7 +18,7 @@ export default function Logementpage() {
   
    // Vérification si le logement existe? si non affiche la page erreur //
     if (!logement) {
-    return <div><Errorpage /></div>;
+    return <div>{Errorpage}</div>;
   }
   
   
@@ -52,9 +52,13 @@ export default function Logementpage() {
    <img src={logement.host.picture} alt="host" />
       <p>{logement.host.name}</p>
    </div>
-
+    
    <div className="carte-notation">
-      < Rating rating={logement.rating} />
+     <div className='star-rating'>
+      {[1, 2, 3, 4, 5].map((numbres) => (
+      <span key={numbres} className={logement.rating >= numbres ? "on" : ""}>★</span>
+   ))}
+    </div>
    </div>
 
     <div className="fondation-collapse "> 

@@ -12,14 +12,15 @@ text-align: center;
     margin-top: 0%;
    
 }
-
 .eurrepage a{
-color: #FF6060;
+color: #000;
 font-size: 18px;
 font-weight: 500;
 line-height: 26px;
 letter-spacing: 0em;
-
+}
+.eurrepage :hover a {
+   color: gray;
 }
 
 .eurrepage p{
@@ -29,11 +30,13 @@ letter-spacing: 0em;
 //media query pour format smartphone//
 @media screen and (max-width: 768px) {
 .eurrepage {
-    width: auto;
+    width: 100%;
 }
 .eurrer404 {
 font-size: 170px;
-
-
 }
+.eurrepage h2{
+    width: auto;
+}
+
 }
