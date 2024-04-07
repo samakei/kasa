@@ -18,7 +18,7 @@ const Collapse = ({ title, text,  children }) => {
            <span className='collapse-titre'>{title}</span>
         
         <span className={`arrow ${isOpen ? 'open' : 'closed'}`}>
-          <img src={arrow_up} alt="" />
+          <img src={arrow_up} alt="arrow_up" />
         </span>
       </div>
       {isOpen && (

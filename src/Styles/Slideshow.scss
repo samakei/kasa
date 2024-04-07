@@ -61,12 +61,12 @@ z-index: 1;
   margin-top: 20rem;
  
 }
-  
+
    
   
 
 //media querry pour format  smartphone//
-@media  only screen and (max-width: 768px) {
+@media  only screen and (max-width: 1024px) {
 .slides-carrousel {
   width: 100%;
   justify-content: center;
@@ -75,8 +75,9 @@ z-index: 1;
 
   }
 .slides-carrousel img{
-   width: 768px;
+   width: 1024px;
    height: 255px;
+   object-fit: cover;
   
 }
 .Gestion-fleches button {

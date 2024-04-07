@@ -1,23 +1,22 @@
 .about-imgbanner {
   display: flex;
   width: 100%;
-  width: 1240px;
-  height: auto;
-  margin: 0 auto;
-}
-
-
-
-.about-imgbanner img{
-  min-width: 100%;
-  width: 100%;
-  height: 233px;
+  height: 223px;
+  max-width: 1240px;
   border-radius: 1rem;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  overflow: hidden;
+  margin: 0 auto;
+
+  overflow: hidden; 
 }
+
+.about-imgbanner img {
+  border-radius: 1rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
 
 .abaut-descriptions .collapse {
   display: flex;
@@ -25,21 +24,29 @@
   margin: 0 auto;
   max-width: 1023px;
   width: 100%;
-  padding: 1rem;
+ padding: 10px 20px 3px 15px;
   border-radius: 5px;
 
 }
+/* media querry format Tablette*/
+@media only screen and (max-width: 1024px) {
+.abaut-descriptions .collapse{
+  width: auto;
+ 
+}
+}
 
 
-@media screen  and (max-width: 768px) {
+@media screen  and (max-width: 600px) {
 .about-imgbanner {
  width: 100%;
+ height: 111px;
  justify-content: center;
 
 }
 .about-imgbanner img {
-  width: 335px;
-  height: 111px
+  width: 100%;
+  height: 111px;
 }
 .abaut-descriptions .collapse {
 width: auto;

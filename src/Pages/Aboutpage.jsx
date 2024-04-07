@@ -5,12 +5,16 @@ import Collapse from '../composants/Collapse';
 
 
 
+
+
+
+
 export default function Aboutpage() {
   return (
     
     <div className='container' >
     <div className='about-imgbanner'>
-      <img src="kalen_banner.png" alt="banner" />
+      <img  src="/kalen_banner.png" alt="kalen-banner" />
     </div>
 
     <div className='abaut-descriptions'>

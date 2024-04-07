@@ -2,9 +2,10 @@
 .pgappartement {
     display: flex;
     width: 100%;
-     max-width: 1240px;
+    max-width: 1240px;
     margin: 0 auto;
-    
+    flex-wrap: wrap;
+
 }
 .info-general {
     position: relative;

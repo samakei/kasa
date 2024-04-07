@@ -1,26 +1,33 @@
 .main-listeLogements {
-   background-color: #F6F6F6;
-   display: flex;
-   justify-content: left;
-   flex-wrap: wrap;
-    min-height: 30vw;
-    border-radius: 2rem;
-    width: auto;
-    max-width: 1240px;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-radius: 2rem;
+  width: auto;
+  max-width: 1240px;
+  margin: 0 auto;
+  background-color: #F6F6F6;
   
-    
+  
 }
 
+  
 
-@media only screen and (max-width: 768px) {
-  .main-listeLogements  {
-    width: 100%;
-    background-color: white;
-    
-    }
-    
-
+/* Media Query pour les tablettes */
+@media only screen and (max-width: 1024px) {
+  .main-listeLogements {
+    flex-wrap: wrap; /* Permettre aux éléments de se mettre en ligne si nécessaire */
+  }
 }
+
+/* Media Query pour les écrans de petite taille, comme les smartphones */
+@media only screen and (max-width: 600px) {
+  .main-listeLogements {
+    height: auto; /* Ajuster la hauteur minimale en fonction du contenu */
+    background-color: white;/* Supprimer la background-color: #F6F6F6; sur les petits écrans */
+    padding: 10px; /* Ajouter un peu d'espace autour des éléments sur les petits écrans */
+  }
+}
+
 
 
