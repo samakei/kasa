@@ -5,7 +5,7 @@
     max-width: 1240px;
     margin: 0 auto;
     flex-wrap: wrap;
-
+    
 }
 .info-general {
     position: relative;
@@ -84,8 +84,6 @@ text-align: right;
 margin: 1rem;
 width: 93px;
 height: 52px;
-
-
 }
 
 .carte-notation {
@@ -107,6 +105,7 @@ height: 52px;
 }
 
 
+
 //media query pour format smartphone//
 @media only screen and (max-width: 768px) {
   .carte-mots_cles {
@@ -126,7 +125,6 @@ height: 52px;
     flex-wrap: wrap;
     width: auto;
     
-
   }
   .fondation-collapse{
     width: 100%;

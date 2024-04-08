@@ -10,6 +10,7 @@
     margin: 0 auto;
     
     
+    
 }
 
 .logo-footer {
@@ -21,11 +22,11 @@
     padding-top: 1rem;
 }
 
-
 @media only screen and (max-widht: 600px) {
 .footer {
     width: auto;
 }
+
 .logo-footer {
     display: flex;
     width: auto;
