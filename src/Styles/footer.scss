@@ -8,32 +8,31 @@
     min-height: 200px;
     margin-top: 2rem;
     margin: 0 auto;
-    
-    
-    
-}
-
-.logo-footer {
-    padding-top: 1rem;
-    
-    
-}
-.text_footer{
-    padding-top: 1rem;
-}
-
-@media only screen and (max-widht: 600px) {
-.footer {
-    width: auto;
-}
-
-.logo-footer {
-    display: flex;
-    width: auto;
-    margin: 0 auto;
-    justify-content: center;
+    display: flex; /* Ajout de display: flex */
+    flex-direction: column; /* Ajout de flex-direction: column */
    
 }
-    
+
+.logo-footer {
+    padding-top: 1rem;
+  
 }
 
+.text_footer {
+    padding-top: 1rem;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .footer {
+        width: auto;
+    }
+
+    .logo-footer {
+        display: flex;
+        width: auto;
+        margin: 0 auto;
+        justify-content: center;
+       
+    }
+}

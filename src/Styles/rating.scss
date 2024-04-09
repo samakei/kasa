@@ -1,9 +1,9 @@
 .star-rating {
   display: flex;
-  height: 36px;
   margin-top: 145px;
-  font-size: 2.5rem;
-  color: #ccc;   
+  height: 36px;
+  font-size: 2.5rem; 
+ 
 }
 
 .on {
@@ -13,7 +13,11 @@
 
 @media only  screen and (max-width: 768px) {
   .star-rating {
-    font-size: 1.6rem;
+  font-size: 1.7rem;
+ 
+   
+    
+    
     
   }
   
