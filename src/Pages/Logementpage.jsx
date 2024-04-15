@@ -6,6 +6,12 @@ import Errorpage from "./Errorpage"; // Importation du composant Errorpage pour 
 import Slideshow from "../composants/Slideshow"; // Importation du composant Slideshow pour afficher le diaporama d'images
 import Collapse from "../composants/Collapse"; // Importation du composant Collapse pour afficher les sections extensibles
 import "../Styles/rating.scss"; // Importation du fichier CSS pour les styles de notation
+import Tags from "../composants/Tags";
+import "../Styles/tags.scss"
+
+      
+   
+   
 
 export default function Logementpage() { // Définition du composant Logementpage
    const {logementId} = useParams(); // Récupération du paramètre logementId depuis l'URL à l'aide du hook useParams
@@ -32,12 +38,12 @@ export default function Logementpage() { // Définition du composant Logementpag
                <h2>{logement.title}</h2>
                <p>{logement.location}</p>
             </div>
-            <ul className="carte-mots_cles">
-               {/* Affichage des tags du logement */}
-               {logement.tags.map((tag, index) => (
-                  <li key={index}>{tag}</li>
-               ))}
-            </ul>
+         
+              <div className="carte-tag">
+              {/* Utilisation du composant Tags pour afficher les tags */}
+              <Tags tags={logement.tags} />
+            </div>
+            
             <div className="carte-hôtesse">
                {/* Affichage de l'image et du nom de l'hôte du logement */}
                <img src={logement.host.picture} alt="host" />
@@ -61,3 +67,6 @@ export default function Logementpage() { // Définition du composant Logementpag
       </nav>
    );
 }
+
+
+ 

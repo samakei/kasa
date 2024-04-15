@@ -36,30 +36,6 @@ text-align: left;
 
 }
 
-.carte-mots_cles{
-    display: flex;
-    width: 365px;
-    height: 25px; 
-    flex-direction: row;
-    padding-left: 0;
-    
-     
-}
-.carte-mots_cles li{
- list-style-type: none;
-  background-color: #ff6060;
-  color: white;
-  font-size: 14px;
-  height: 25px;
-  min-width: 115px;
-  padding: 5px 10px;
-  width: auto;
-  margin-right: 20px;
-  border-radius: 10px;
-  margin-top: 11px;
-   text-align: center;
-}
-
 .carte-hôtesse {
     display: flex;
     flex-direction: row-reverse;
@@ -103,32 +79,12 @@ height: 52px;
  
    
 }
-@media only screen and (max-width: 1024px){
-.carte-mots_cles li{
-  width: auto;
-}
-
-.carte-mots_cles{
-  height: auto;
-  flex-wrap: wrap;
-   
-}
-}
 
 
 
 //media query pour format smartphone//
 @media only screen and (max-width: 768px) {
- .carte-mots_cles li{
-     height: 18px;
-    min-width: 60px;
-    font-size: 10px;
-    padding: 2px 6px;
-    
-  }
-  .carte-mots_cles {
-    flex-wrap: wrap;
-  }
+
   .carte-titre {
     min-width: 84px;
     font-size: 12px;
@@ -146,6 +102,8 @@ height: 52px;
   .carte-hôtesse {
     width: auto;
     position: initial;
+    margin-top: 1.5rem;
+   
 
   }
   .carte-notation {

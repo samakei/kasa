@@ -1,0 +1,58 @@
+.tags-container{
+    display: flex;
+    width: 365px;
+    height: 25px; 
+    flex-direction: row;
+    padding-left: 0;
+
+}
+ .tag{
+ min-width: 115px;
+ background-color: #ff6060;
+  color: white;
+  font-size: 14px;
+  height: 25px;
+  padding: 5px 10px;
+  width: auto;
+  margin-right: 20px;
+  border-radius: 10px;
+  margin-top: 11px;
+ text-align: center;
+
+
+  
+}
+
+.carte-tag{
+ padding: 1rem 0rem;
+ 
+}
+@media only screen and (max-width: 1024px){
+.carte-tag{
+  width: auto;
+}
+
+.tags-container{
+  height: auto;
+  flex-wrap: wrap;
+   
+}
+}
+
+@media only screen and (max-width: 768px) {
+ .tag{
+    height: 18px;
+    text-align: center;
+    min-width: 60px;
+    font-size: 10px;
+    padding: 2px 6px;
+    
+    
+  }
+  .tags-container{
+  flex-wrap: wrap;
+    
+  }
+
+  
+}
