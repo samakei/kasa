@@ -6,8 +6,8 @@ import Errorpage from "./Errorpage"; // Importation du composant Errorpage pour 
 import Slideshow from "../composants/Slideshow"; // Importation du composant Slideshow pour afficher le diaporama d'images
 import Collapse from "../composants/Collapse"; // Importation du composant Collapse pour afficher les sections extensibles
 import "../Styles/rating.scss"; // Importation du fichier CSS pour les styles de notation
-import Tags from "../composants/Tags";
-import "../Styles/tags.scss"
+import Tag from "../composants/Tag";
+import "../Styles/tag.scss"
 
       
    
@@ -39,10 +39,14 @@ export default function Logementpage() { // Définition du composant Logementpag
                <p>{logement.location}</p>
             </div>
          
-              <div className="carte-tag">
-              {/* Utilisation du composant Tags pour afficher les tags */}
-              <Tags tags={logement.tags} />
+               
+              <div className="carte-tags">
+              {/* Itérer sur les tags et utiliser le composant Tag pour chaque tag */}
+              {logement.tags.map((tag, index) => (
+                <Tag key={index} name={tag} />
+              ))}
             </div>
+
             
             <div className="carte-hôtesse">
                {/* Affichage de l'image et du nom de l'hôte du logement */}

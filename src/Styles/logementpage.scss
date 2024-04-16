@@ -75,11 +75,17 @@ height: 52px;
    display: flex;
   flex-direction: row;
   justify-content: space-between;
+  
  
- 
-   
 }
 
+@media only screen and (max-width: 1024px) {
+  .fondation-collapse{
+    margin-top: 2rem;
+  }
+    
+  
+}
 
 
 //media query pour format smartphone//
@@ -98,13 +104,15 @@ height: 52px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    
   }
   .carte-hôtesse {
     width: auto;
     position: initial;
-    margin-top: 0rem;
-   
-
+    margin-top: 2rem;
+  }
+  .carte-hôtesse p{
+    width: 60px;
   }
   .carte-notation {
     width: auto;

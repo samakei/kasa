@@ -1,13 +1,13 @@
-.tags-container{
+.carte-tags{
     display: flex;
-    width: 365px;
+    width: auto;
     height: 25px; 
     flex-direction: row;
     padding-left: 0;
 
 }
  .tag{
- min-width: 115px;
+  min-width: 115px;
  background-color: #ff6060;
   color: white;
   font-size: 14px;
@@ -19,23 +19,23 @@
   border-radius: 10px;
   margin-top: 11px;
   text-align: center;
- 
   
 }
 
-.carte-tag{
+.carte-tags{
  padding: 1rem 0rem;
  
 }
 @media only screen and (max-width: 1024px){
-.carte-tag{
+.tag{
   width: auto;
+  
 }
 
-.tags-container{
-  height: auto;
+.carte-tags{
  flex-wrap: wrap;
-   
+ width: 365px;
+ 
 }
 }
 
@@ -43,13 +43,14 @@
  .tag{
     height: 18px;
     text-align: center;
-    min-width: 60px;
+    width: 70px;
     font-size: 10px;
     padding: 2px 6px;
     
+  
     
   }
-  .tags-container{
+  .carte-tags{
   flex-wrap: wrap;
     
   }
